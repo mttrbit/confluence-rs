@@ -38,9 +38,9 @@ let svc = ConfluenceService::new(Confluence::with_client(
 ));
 ```
 
-In teh example above saml based authentication workflow is executed in order to fetch a valid session cookie. This cookie is stored in the
+In thw example above s saml based authentication workflow is executed in order to fetch a valid session cookie. This cookie is stored in the
 cookie store of the reqwest client. In my workflow this cookie is needed to invoke the Confluence Rest API.
 
 # How to extend
-If you need basic auth or an API tokne based workflow, you can easily extend this code, by adding new fields to `struct Confluence` in `client.rs`. 
+If you need basic auth or an API toknen based workflow, you can easily extend this code by adding new fields to `struct Confluence` in `client.rs`. 
 In `macros.rs` you need to add some logic the `Executor` implementation to ensure the new authentication mechanism is supported.
