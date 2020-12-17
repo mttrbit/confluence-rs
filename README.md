@@ -43,4 +43,4 @@ cookie store of the reqwest client. In my workflow this cookie is needed to invo
 
 # How to extend
 If you need basic auth or an API toknen based workflow, you can easily extend this code by adding new fields to `struct Confluence` in `client.rs`. 
-In `macros.rs` you need to add some logic the `Executor` implementation to ensure the new authentication mechanism is supported.
+In `macros.rs` you need to add some logic to the `Executor` implementation to ensure the new authentication mechanism is supported.
