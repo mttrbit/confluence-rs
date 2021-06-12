@@ -5,10 +5,10 @@ mod macros;
 extern crate error_chain;
 
 pub mod client;
+pub mod content;
 pub mod errors;
 pub mod model;
 
-mod content;
 mod util;
 
 #[cfg(test)]
